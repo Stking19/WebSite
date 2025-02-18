@@ -76,6 +76,7 @@ const ShoppingCart = () => {
                   <j>$17.60</j></p>
                 </div>
               </div>
+              {/* j kvjsd vsd vksdvsdvdjmkvasdvjkad vjdmasd */}
               <button onClick={() => navigate("/checkout")}>Proceed to Checkout</button>
           </div>
        </div>
