@@ -1,0 +1,35 @@
+{
+    "slides":[
+        {
+            "img":"IMG/person_1.jpg",
+            "testimony":"Far far away, behind the word      mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+            "name":"Garreth Smith",
+            "position":"SYSTEM ANALYST"
+        },
+        {
+            "img":"IMG/person_1.jpg",
+            "testimony":"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+            "name":"Garreth Smith",
+            "position":"MARKETING MANAGER"
+        },
+        {
+            "img":"IMG/person_2.jpg",
+            "testimony":"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+            "name":"Garreth Smith",
+            "position":"INTERFACE DESIGNER"
+        },
+        {
+            "img":"IMG/person_3.jpg",
+            "testimony":"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+            "name":"Garreth Smith",
+            "position":"UI DESIGNER"
+        },
+        {
+            "img":"IMG/person_1.jpg",
+            "testimony":"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+            "name":"Garreth Smith",
+            "position":"WEB DEVELOPER"
+        }
+       
+    ]
+}

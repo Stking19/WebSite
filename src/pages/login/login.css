@@ -1,0 +1,49 @@
+.bg {
+    width: 100%;
+    height: fit-content;
+    /* background-color: pink; */
+    display: flex;
+    justify-content: space-between;
+}
+.imgzz {
+    width: 45%;
+    height: 100%;
+    object-fit: cover;
+}
+.bg_input{
+    width: 40%;
+    height: 75vh;
+    /* background-color: bisque; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-top: 80px;
+    margin-right: 55px;
+    box-shadow: rgba(14, 63, 126, 0.06) 0px 0px 0px 1px, rgba(42, 51, 70, 0.03) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 2px 2px -1px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.03) 0px 5px 5px -2.5px, rgba(42, 51, 70, 0.03) 0px 10px 10px -5px, rgba(42, 51, 70, 0.03) 0px 24px 24px -8px;
+}
+h2{
+    font-size: 43px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+.inputz {
+    width:90%;
+    height: 12vh;
+    border: 1px solid grey;
+    border-radius: 10px;
+    font-size: 22px;
+    padding: 10px;
+   
+}
+.btin {
+    width:90%;
+    height: 9vh;
+    background-color: rgb(241, 21, 69);
+    border: none;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
