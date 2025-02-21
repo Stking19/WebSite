@@ -1,5 +1,5 @@
 import React from 'react'
-import './shoppingCart.css'
+import './shoppingcart.css'
 import product3 from '../../../IMG/product3.jpg'
 import product4 from '../../../IMG/product4.jpg'
 import { useNavigate } from 'react-router'
