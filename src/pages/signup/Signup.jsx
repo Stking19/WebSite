@@ -5,7 +5,7 @@ const Signup = () => {
   return (
     <div className='bg'>
         <div className='imgzz'>
-            <img src="src/assets/websiteimage/bg_1.jpg" alt="" />
+            <img src="https://images.pexels.com/photos/2363347/pexels-photo-2363347.jpeg?auto=compress&cs=tinysrgb&w=600" alt=''/>
         </div>
         <div className='bg_input'>
             <h2>SignUp</h2>

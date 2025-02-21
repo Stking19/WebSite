@@ -28,12 +28,21 @@ import { FaBars } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
 import { MdOutlineFavorite } from "react-icons/md";
 import Carousel from '../../components/carousel/Carousel.jsx'
+import SlideInComponent from '../../components/SlideInComponent.jsx'
+import { useNavigate } from 'react-router'
 
 const Home = () => {
+
+  const navigate = useNavigate();
 
 const img = [
   image,
   image2
+]
+
+const text = [
+  "We Serve Fresh Vegetables & Fruits",
+  "100% Fresh & Organic Foods"
 ]
 
 const [num, setNum] = useState(0)
@@ -54,30 +63,38 @@ useEffect(() =>{
     <>
     <div className="home">
       <img src={img[num % img.length]} alt="" />
-    </div>
-    <div className='homeIcons'>
-      <div className='contain'>
-        <div className='icons'><p><TbTruckDelivery /></p></div>
-        <h4>Free Shipping</h4>
-        <j>ON ORDER OVER $100</j>
-      </div>
-      <div className='contain'>
-        <div className='icons2'><p><IoFastFood  /></p></div>
-        <h4>ALWAYS FRESH</h4>
-        <j>PRODUCT WELL PACKAGE</j>
-      </div>
-      <div className='contain'>
-        <div className='icons3'><p><FaAward /></p></div>
-        <h4>SUPERIOR QUALITY</h4>
-        <j>QUALITY PRODUCTS</j>
-      </div>
-      <div className='contain'>
-        <div className='icons4'><p><RiCustomerService2Line /></p></div>
-        <h4>SUPPORT</h4>
-        <j>24/7 SUPPORT</j>
+      <div className='carText'><p>{text[num]}</p>
+      <j>WE DELIVER ORGANIC VEGETABLES & FRUITS</j>
+      <button>View Details</button>
       </div>
     </div>
 
+    <SlideInComponent>
+      <div className='homeIcons'>
+        <div className='contain'>
+          <div className='icons'><p><TbTruckDelivery /></p></div>
+          <h4>Free Shipping</h4>
+          <j>ON ORDER OVER $100</j>
+        </div>
+        <div className='contain'>
+          <div className='icons2'><p><IoFastFood  /></p></div>
+          <h4>ALWAYS FRESH</h4>
+          <j>PRODUCT WELL PACKAGE</j>
+        </div>
+        <div className='contain'>
+          <div className='icons3'><p><FaAward /></p></div>
+          <h4>SUPERIOR QUALITY</h4>
+          <j>QUALITY PRODUCTS</j>
+        </div>
+        <div className='contain'>
+          <div className='icons4'><p><RiCustomerService2Line /></p></div>
+          <h4>SUPPORT</h4>
+          <j>24/7 SUPPORT</j>
+        </div>
+      </div>
+    </SlideInComponent>
+
+    <SlideInComponent>
     <div className='pic'> 
         <div className='block'>
           <div className='box'><img src={image3} alt="" /><button>Fruits</button></div>
@@ -95,7 +112,9 @@ useEffect(() =>{
           <div className='box'><img src={image6} alt="" /><button>Dried</button></div>
         </div>
     </div>
+  </SlideInComponent>
 
+   <SlideInComponent>
     <div className='section'>
       <div className='headText'>
           <h4>Featured Products</h4>
@@ -103,109 +122,117 @@ useEffect(() =>{
           <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
       </div>
 
-      <div className='product'>
-         <div className='prod'>
-            <div className='hover'><p><FaBars /></p>
-            <p><FaShoppingCart /></p>
-            <p><MdOutlineFavorite /></p></div>
-          <div className='zoom'> 
-            <img src={product1} alt="" /> 
-          </div>
-            <div className='text'> <h4>BELL PEPPER</h4> <k><j>$120.00</j>$80.00</k></div></div>
+        <div className='product'>
+          <div className='prod'>
+              <div className='hover'><p><FaBars /></p>
+              <p onClick={() => navigate("/cart")}><FaShoppingCart /></p>
+              <p><MdOutlineFavorite /></p></div>
+            <div className='zoom'> 
+              <img src={product1} alt="" /> 
+            </div>
+              <div className='text'> <h4>BELL PEPPER</h4> <k><j>$120.00</j>$80.00</k></div></div>
+            <div className='prod'> 
+              <div className='hover'><p><FaBars /></p>
+              <p onClick={() => navigate("/cart")}><FaShoppingCart /></p>
+              <p><MdOutlineFavorite /></p></div>
+            <div className='zoom'>
+              <img src={product2} alt="" /> 
+            </div>
+            <div className='text'> <h4>STAWBERRY</h4> <p>$120.00</p></div></div>
+          <div className='prod'> 
+              <div className='hover'><p><FaBars /></p>
+              <p onClick={() => navigate("/cart")}><FaShoppingCart /></p>
+              <p><MdOutlineFavorite /></p></div>
+            <div className='zoom'>
+              <img src={product3} alt="" /> 
+            </div> 
+            <div className='text'> <h4>GREEN BEANS</h4> <p>$120.00</p></div></div>
+          <div className='prod'> 
+              <div className='hover'><p><FaBars /></p>
+              <p onClick={() => navigate("/cart")}><FaShoppingCart /></p>
+              <p><MdOutlineFavorite /></p></div>            
+            <div className='zoom'>
+              <img src={product4} alt="" /> 
+            </div> 
+            <div className='text'> <h4>PURPLE CABBAGE</h4> <p>$120.00</p></div></div>
+          <div className='prod'> 
+              <div className='hover'><p><FaBars /></p>
+              <p onClick={() => navigate("/cart")}><FaShoppingCart /></p>
+              <p><MdOutlineFavorite /></p></div>
+            <div className='zoom'>
+              <img src={product5} alt="" /> 
+            </div> 
+            <div className='text'> <h4>TOMATOE</h4> <k><j>$120.00</j> $80.00</k></div></div>
+          <div className='prod'>
+              <div className='hover'><p><FaBars /></p>
+              <p onClick={() => navigate("/cart")}><FaShoppingCart /></p>
+              <p><MdOutlineFavorite /></p></div>
+            <div className='zoom'>
+              <img src={product6} alt="" /> 
+            </div>
+            <div className='text'> <h4>BROCOLLI</h4> <p>$120.00</p></div></div>
+          <div className='prod'>
+              <div className='hover'><p><FaBars /></p>
+              <p onClick={() => navigate("/cart")}><FaShoppingCart /></p>
+              <p><MdOutlineFavorite /></p></div>
+            <div className='zoom'>
+              <img src={product7} alt="" /> 
+            </div>  
+            <div className='text'> <h4>CARROTS</h4> <p>$120.00</p></div></div>
           <div className='prod'> 
             <div className='hover'><p><FaBars /></p>
-            <p><FaShoppingCart /></p>
+            <p onClick={() => navigate("/cart")}><FaShoppingCart /></p>
             <p><MdOutlineFavorite /></p></div>
-          <div className='zoom'>
-            <img src={product2} alt="" /> 
-          </div>
-          <div className='text'> <h4>STAWBERRY</h4> <p>$120.00</p></div></div>
-         <div className='prod'> 
-            <div className='hover'><p><FaBars /></p>
-            <p><FaShoppingCart /></p>
-            <p><MdOutlineFavorite /></p></div>
-          <div className='zoom'>
-            <img src={product3} alt="" /> 
-          </div> 
-          <div className='text'> <h4>GREEN BEANS</h4> <p>$120.00</p></div></div>
-         <div className='prod'> 
-            <div className='hover'><p><FaBars /></p>
-            <p><FaShoppingCart /></p>
-            <p><MdOutlineFavorite /></p></div>            
-          <div className='zoom'>
-            <img src={product4} alt="" /> 
-          </div> 
-          <div className='text'> <h4>PURPLE CABBAGE</h4> <p>$120.00</p></div></div>
-         <div className='prod'> 
-            <div className='hover'><p><FaBars /></p>
-            <p><FaShoppingCart /></p>
-            <p><MdOutlineFavorite /></p></div>
-          <div className='zoom'>
-            <img src={product5} alt="" /> 
-          </div> 
-          <div className='text'> <h4>TOMATOE</h4> <k><j>$120.00</j> $80.00</k></div></div>
-         <div className='prod'>
-            <div className='hover'><p><FaBars /></p>
-            <p><FaShoppingCart /></p>
-            <p><MdOutlineFavorite /></p></div>
-          <div className='zoom'>
-            <img src={product6} alt="" /> 
-          </div>
-          <div className='text'> <h4>BROCOLLI</h4> <p>$120.00</p></div></div>
-         <div className='prod'>
-            <div className='hover'><p><FaBars /></p>
-            <p><FaShoppingCart /></p>
-            <p><MdOutlineFavorite /></p></div>
-          <div className='zoom'>
-            <img src={product7} alt="" /> 
-          </div>  
-          <div className='text'> <h4>CARROTS</h4> <p>$120.00</p></div></div>
-         <div className='prod'> 
-          <div className='hover'><p><FaBars /></p>
-          <p><FaShoppingCart /></p>
-          <p><MdOutlineFavorite /></p></div>
-          <div className='zoom'>
-          <img src={product8} alt="" /> 
-          </div>
-          <div className='text'> <h4>FRUIT JUICE</h4> <p>$120.00</p></div></div>
+            <div className='zoom'>
+            <img src={product8} alt="" /> 
+            </div>
+            <div className='text'> <h4>FRUIT JUICE</h4> <p>$120.00</p></div></div>
+        </div>
+      </div>
+    </SlideInComponent>
+
+    <SlideInComponent>
+        <div className='section4'>
+        <div className='timer_section_side'>
+        <p>Best Price For You</p>
+        <h2>Deal of the day</h2>
+        <span>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</span>
+        <h3>Spinach</h3>
+        <h5><em>$10 </em>now $5 only</h5>
+        <div className='timer'>
+        <span className='T'>
+            <li>-1885</li>
+            <li>09</li>
+            <li>02</li>
+            <li>15</li>
+        </span>
+        <labe htmlFor="Time" className='t'>
+            <li>DAYS</li>
+            <li>HOURS</li>
+            <li>MINUTES</li>
+            <li>SECONDS</li>
+        </labe>
+        </div>
       </div>
     </div>
-    <div className='section4'>
-    <div className='timer_section_side'>
-    <p>Best Price For You</p>
-    <h2>Deal of the day</h2>
-    <span>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</span>
-    <h3>Spinach</h3>
-    <h5><em>$10 </em>now $5 only</h5>
-    <div className='timer'>
-     <span className='T'>
-        <li>-1885</li>
-        <li>09</li>
-        <li>02</li>
-        <li>15</li>
-     </span>
-     <label htmlFor="Time" className='t'>
-        <li>DAYS</li>
-        <li>HOURS</li>
-        <li>MINUTES</li>
-        <li>SECONDS</li>
-     </label>
-    </div>
+    </SlideInComponent>
 
-</div>
-    </div>
+    <SlideInComponent>
+      <div className='customer'>
+      <h4>Testimony</h4>
+            <h1>Our satisfied customer says</h1>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and <br />
+              Consonantia, there live the blind texts. Separated they live in</p>
+      </div>
+    </SlideInComponent>
 
-    <div className='customer'>
-    <h4>Testimony</h4>
-          <h1>Our satisfied customer says</h1>
-          <p>Far far away, behind the word mountains, far from the countries Vokalia and <br />
-             Consonantia, there live the blind texts. Separated they live in</p>
-    </div>
+    <SlideInComponent>
+      <div className='found'>
+        <Carousel />
+      </div>
+    </SlideInComponent>
 
-    <div className='found'>
-      <Carousel />
-    </div>
-
+  <SlideInComponent>
     <div className='brands'>
       <div className='bloc'><img src={partner1} alt="" /></div>
       <div className='bloc'><img src={partner2} alt="" /></div>
@@ -213,6 +240,7 @@ useEffect(() =>{
       <div className='bloc'><img src={partner4} alt="" /></div>
       <div className='bloc'><img src={partner5} alt="" /></div>
     </div>
+  </SlideInComponent>
 
     </>
 

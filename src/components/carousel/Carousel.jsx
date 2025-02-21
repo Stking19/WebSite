@@ -24,7 +24,6 @@ const Carousel = () => {
         </span>
       
     </div>
-    <hr />
     </>
   )
 }

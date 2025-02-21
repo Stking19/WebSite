@@ -4,6 +4,35 @@
     background-image: url(../../../IMG/image1.jpg);
     background-size: cover;
     background-position: center;
+    position: relative;
+}
+
+.onTop{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(88, 84, 84, 0);
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    & p{
+        width: 10%;
+        /* background-color: red; */
+        /* height: 20%; */
+        display: flex;
+        justify-content: center;
+        word-spacing: 6px;
+        font-size: 14px;
+    }
+
+    & h3{
+        font-size: 32px;
+        margin-top: 10px;
+    }
 }
 
 .headBar{
@@ -202,14 +231,6 @@ j{
             margin-left: 70%;
         }
 
-    }
-
-    & input{
-        width: 99%;
-        margin: 0;
-        text-align: left;
-        padding: 10px;
-        font-size: 18px;
     }
     
 }

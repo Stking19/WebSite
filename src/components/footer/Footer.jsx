@@ -10,7 +10,7 @@ const Footer = () => {
 <>
     <div className='signup'>
         <div className='context'>
-            <h2>Subscribe to our Newsletter</h2>
+            <h1 style={{fontSize: "25px", fontWeight: "100", marginRight: "18%"}}>Subscribe to our Newsletter</h1>
             <p>Get e-mail updates about our latest shops and special offers</p>
         </div>
         <div className='contexts'> 

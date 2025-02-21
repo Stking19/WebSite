@@ -3,6 +3,7 @@ import './shoppingCart.css'
 import product3 from '../../../IMG/product3.jpg'
 import product4 from '../../../IMG/product4.jpg'
 import { useNavigate } from 'react-router'
+import SlideInComponent from '../../components/SlideInComponent'
 
 const ShoppingCart = () => {
 
@@ -10,12 +11,19 @@ const ShoppingCart = () => {
   return (
     <>
     <div className='send'>
+      <div className='onTop'>
+        <p>HOME CART</p>
+        <h3>MY CART</h3>
+      </div>
     </div>
 
+  <SlideInComponent>
     <div className='headBar'>
     <p>Product name</p>	<p>Price</p>	<p>Quantity</p>	<p>Total</p>
     </div>
+  </SlideInComponent>  
 
+  <SlideInComponent>
     <div className='prodetails'>
         <div className='pro'><button>x</button>
           <div className='proImg'><img src={product3} alt="" /></div>
@@ -38,7 +46,9 @@ const ShoppingCart = () => {
           <j>$15.70</j>
         </div>
     </div>
+    </SlideInComponent>
 
+  <SlideInComponent>
     <div className='total'>
       <div className='wrapper'>
           <div className='first'><h4>Coupon Code</h4>
@@ -76,10 +86,10 @@ const ShoppingCart = () => {
                   <j>$17.60</j></p>
                 </div>
               </div>
-              {/* j kvjsd vsd vksdvsdvdjmkvasdvjkad vjdmasd */}
               <button onClick={() => navigate("/checkout")}>Proceed to Checkout</button>
           </div>
        </div>
+       </SlideInComponent>
     </>
   )
 }

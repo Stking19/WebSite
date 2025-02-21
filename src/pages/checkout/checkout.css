@@ -1,0 +1,247 @@
+.Cout{
+    width: 100%;
+    height: 400px;
+    background-image: url(../../../IMG/image1.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.onTop{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(88, 84, 84, 0);
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    & p{
+        width: 10%;
+        /* background-color: red; */
+        /* height: 20%; */
+        display: flex;
+        justify-content: center;
+        word-spacing: 6px;
+        font-size: 14px;
+    }
+
+    & h3{
+        font-size: 32px;
+        margin-top: 10px;
+    }
+}
+
+.bodyCard{
+    width: 100%;
+    height: 900px;
+    /* background-color: gray; */
+    display: flex;
+    gap: 20px;
+}
+
+.billing{
+    width: 55%;
+    height: 90%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.cartTotal{
+    width: 42%;
+    height: 95%;
+    /* background-color: rgb(226, 219, 219); */
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.wrapping{
+    width: 85%;
+    height: 90%;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    gap: 10px;
+}
+
+.Class{
+    width: 100%;
+    height: 15%;
+    /* background-color: aliceblue; */
+    display: flex;
+    align-items: center;
+    padding-right: 1%;
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    /* background-color: red; */
+    gap: 10px;
+
+    & input{
+        width: 90%;
+        height: 60px;
+        /* margin-right: 10%; */
+        text-align: left;
+        padding: 10px;
+        font-size: 15px;
+    }
+}
+
+.Classes{
+    width: 100%;
+    height: 10%;
+    display: flex;
+
+    & label{
+        width: 25%;
+        height: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    & .style{
+        width: 40%;
+        padding-right: 10%;
+    }
+
+    & input{
+        width: 18%;
+        height: 18%;
+    }
+}
+
+.wrappers{
+    width: 90%;
+    height: 50%;
+}
+
+.thir{
+    width: 100%;
+    height: 85%;
+    border: 1px solid lightgray;
+    padding: 15px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    & p{
+        width: 50%;
+        display: flex;
+        /* justify-content: space-between; */
+        margin-top: 20px;
+        color: gray;
+
+        & j{
+            margin-left: 70%;
+        }
+
+    }
+
+}
+
+.closa{
+    width: 100%;
+    height: 20%;
+    border-top: 1px solid lightgray;
+    margin-top: 10px;
+
+    & j{
+        font-weight: bold;
+        color: black;
+        padding-left: 5%;
+    }
+}
+
+.thirs{
+    width: 100%;
+    height: 100%;
+    border: 1px solid lightgray;
+    padding: 15px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    & p{
+        width: 50%;
+        display: flex;
+        /* justify-content: space-between; */
+        margin-top: 20px;
+        color: gray;
+
+    }
+
+    & h3{
+        font-size: 25px;
+        font-weight: 300;
+    }
+
+    & .alter{
+        width: 90%;
+        height: 13%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0;
+    
+        & input{
+            height: 60%;
+        }
+    }
+
+    & k{
+        color: gray;
+    }
+
+    & .alta{
+        width: 96%;
+        height: 20%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0;
+    
+        & input{
+            height: 25%;
+        }
+    }
+
+    & k{
+        color: gray;
+    }
+
+    & button{
+        width: 100%;
+        height: 17%;
+        background-color: rgb(130,174,70);
+        color: white;
+        border-radius: 30px;
+        margin-top: 15px;
+        padding: 20px;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 350ms ease-in-out;
+    }
+    
+    button:hover{
+        color: rgb(130,174,70);
+        background-color: white;
+        border: 1px solid rgb(130,174,70);
+    }
+
+}
+

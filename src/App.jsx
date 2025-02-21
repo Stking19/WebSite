@@ -7,6 +7,7 @@ import ShoppingCart from './pages/shoppingCart/ShoppingCart'
 import Signup from './pages/signup/Signup'
 import Homeroute from './routes/Homeroute'
 import { RouterProvider, createBrowserRouter } from 'react-router'
+import ProductDetails from './pages/productDetails/ProductDetails'
 
 function App() {
 
@@ -33,6 +34,11 @@ const router = createBrowserRouter([
       {
         path: "/checkout",
         element: <Checkout />
+      },
+
+      {
+        path: "/pdetails",
+        element: <ProductDetails />
       }
     ]
   },

@@ -11,13 +11,19 @@ import product5 from '../../../IMG/product5.jpg'
 import product6 from '../../../IMG/product6.jpg'
 import product7 from '../../../IMG/product7.jpg'
 import product8 from '../../../IMG/product8.jpg'
+import SlideInComponent from '../../components/SlideInComponent';
 
 const Shop = () => {
   return (
     <>
     <div className='image'> 
+    <div className='onTop'>
+        <p>HOME PRODUCTS</p>
+        <h3>PRODUCTS</h3>
+      </div>
     </div>
 
+ <SlideInComponent>
     <div className='shop'>
         <h4>All</h4>
         <p>Vegetables</p>
@@ -25,7 +31,9 @@ const Shop = () => {
         <p>Juice</p>
         <p>Dried</p>
     </div>
+  </SlideInComponent>
 
+<SlideInComponent>
     <div className='product'>
              <div className='prod'>
                 <div className='hover'><p><FaBars /></p>
@@ -92,6 +100,7 @@ const Shop = () => {
               </div>
               <div className='text'> <h4>FRUIT JUICE</h4> <p>$120.00</p></div></div>
           </div>
+</SlideInComponent>
         
     </>
   )

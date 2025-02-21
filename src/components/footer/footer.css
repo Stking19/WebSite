@@ -139,6 +139,7 @@
         border: none;
         outline: none;
         padding: 10px;
+        text-align: left;
     }
 
     & button{
